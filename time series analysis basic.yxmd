@@ -1,0 +1,469 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.2">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\Srinivas\Desktop\Personal_data_final_facilio\Datasets\EDA_Cleaned.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>EDA_Cleaned.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="H_DATE" size="254" source="File: C:\Users\Srinivas\Desktop\Personal_data_final_facilio\Datasets\EDA_Cleaned.csv" type="V_String" />
+            <Field name="TEMPERATURE" size="254" source="File: C:\Users\Srinivas\Desktop\Personal_data_final_facilio\Datasets\EDA_Cleaned.csv" type="V_String" />
+            <Field name="TOTAL_ENERGY_CONSUMPTION_DELTA" size="254" source="File: C:\Users\Srinivas\Desktop\Personal_data_final_facilio\Datasets\EDA_Cleaned.csv" type="V_String" />
+            <Field name="HOUR" size="254" source="File: C:\Users\Srinivas\Desktop\Personal_data_final_facilio\Datasets\EDA_Cleaned.csv" type="V_String" />
+            <Field name="DAY" size="254" source="File: C:\Users\Srinivas\Desktop\Personal_data_final_facilio\Datasets\EDA_Cleaned.csv" type="V_String" />
+            <Field name="MONTH" size="254" source="File: C:\Users\Srinivas\Desktop\Personal_data_final_facilio\Datasets\EDA_Cleaned.csv" type="V_String" />
+            <Field name="QUARTER" size="254" source="File: C:\Users\Srinivas\Desktop\Personal_data_final_facilio\Datasets\EDA_Cleaned.csv" type="V_String" />
+            <Field name="YEAR" size="254" source="File: C:\Users\Srinivas\Desktop\Personal_data_final_facilio\Datasets\EDA_Cleaned.csv" type="V_String" />
+            <Field name="DAYOFYEAR" size="254" source="File: C:\Users\Srinivas\Desktop\Personal_data_final_facilio\Datasets\EDA_Cleaned.csv" type="V_String" />
+            <Field name="WEEKOFYEAR" size="254" source="File: C:\Users\Srinivas\Desktop\Personal_data_final_facilio\Datasets\EDA_Cleaned.csv" type="V_String" />
+            <Field name="WEEKDAY" size="254" source="File: C:\Users\Srinivas\Desktop\Personal_data_final_facilio\Datasets\EDA_Cleaned.csv" type="V_String" />
+            <Field name="WEEK_INDEX" size="254" source="File: C:\Users\Srinivas\Desktop\Personal_data_final_facilio\Datasets\EDA_Cleaned.csv" type="V_String" />
+            <Field name="TTIME" size="254" source="File: C:\Users\Srinivas\Desktop\Personal_data_final_facilio\Datasets\EDA_Cleaned.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="222" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="H_DATE" selected="True" />
+            <SelectField field="TEMPERATURE" selected="True" />
+            <SelectField field="TOTAL_ENERGY_CONSUMPTION_DELTA" selected="True" />
+            <SelectField field="HOUR" selected="True" />
+            <SelectField field="DAY" selected="True" />
+            <SelectField field="MONTH" selected="True" />
+            <SelectField field="QUARTER" selected="True" />
+            <SelectField field="YEAR" selected="True" />
+            <SelectField field="DAYOFYEAR" selected="True" />
+            <SelectField field="WEEKOFYEAR" selected="True" />
+            <SelectField field="WEEKDAY" selected="True" />
+            <SelectField field="WEEK_INDEX" selected="True" />
+            <SelectField field="TTIME" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings>
+        <Position x="306" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="estimation pct">50</Value>
+          <Value name="validation pct">20</Value>
+          <Value name="rand seed">1</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="546" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Srinivas\AppData\Local\Temp\Engine_10512_805d06e95c634fc4b2a2334c111bdec5_\Engine_5940_9ef8d621b8e04809b43d061027cfee96_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="558" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Srinivas\AppData\Local\Temp\Engine_10512_805d06e95c634fc4b2a2334c111bdec5_\Engine_5940_c493f1d16906414084698b897389965a_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="558" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Srinivas\AppData\Local\Temp\Engine_10512_805d06e95c634fc4b2a2334c111bdec5_\Engine_5940_72dd04bb007d48feaf0b5a71fa1fdbd9_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="Score">
+        <Position x="462" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="modelChoice">Local Model</Value>
+          <Value name="score field">
+          </Value>
+          <Value name="is oversampled">False</Value>
+          <Value name="oversampled value">
+          </Value>
+          <Value name="original percent">2</Value>
+          <Value name="log y">False</Value>
+          <Value name="prediction.interval">False</Value>
+          <Value name="interval.level">95</Value>
+          <Value name="append.xdf">False</Value>
+          <Value name="num.records">256000</Value>
+          <Value name="credentials">
+          </Value>
+          <Value name="models">
+          </Value>
+          <Value name="page">
+          </Value>
+          <Value name="errorStatus">
+          </Value>
+          <Value name="modelDetailJSON">
+          </Value>
+          <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+          <Value name="promoteURL">
+          </Value>
+          <Value name="username">
+          </Value>
+          <Value name="model_name">
+          </Value>
+          <Value name="model_owner">
+          </Value>
+          <Value name="apiKey">
+          </Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="642" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Srinivas\AppData\Local\Temp\Engine_10512_805d06e95c634fc4b2a2334c111bdec5_\Engine_5940_507fe83865b549a0a2d1a1140ac3897c_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings>
+        <Position x="642" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="x var">X</Value>
+          <Value name="y var">TOTAL_ENERGY_CONSUMPTION_DELTA</Value>
+          <Value name="y binary">False</Value>
+          <Value name="y level" />
+          <Value name="reg line">True</Value>
+          <Value name="smooth line">True</Value>
+          <Value name="smooth span">50</Value>
+          <Value name="spread">True</Value>
+          <Value name="boxplots">True</Value>
+          <Value name="jitter x">False</Value>
+          <Value name="jitter y">False</Value>
+          <Value name="log x">False</Value>
+          <Value name="log y">False</Value>
+          <Value name="groups">False</Value>
+          <Value name="group var">H_DATE</Value>
+          <Value name="group lines">False</Value>
+          <Value name="default">True</Value>
+          <Value name="topleft">False</Value>
+          <Value name="topright">False</Value>
+          <Value name="bottomleft">False</Value>
+          <Value name="bottomright">False</Value>
+          <Value name="x label" />
+          <Value name="y label" />
+          <Value name="pointsize">10</Value>
+          <Value name="point size">1.0</Value>
+          <Value name="axis text size">1.2</Value>
+          <Value name="axis label size">1.3</Value>
+          <Value name="title size">1.4</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Scatterplot.yxmc" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="738" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Srinivas\AppData\Local\Temp\Engine_10512_805d06e95c634fc4b2a2334c111bdec5_\Engine_5940_fb06d7b90a1e4f78b970c716578cc233_.yxdb</TempFile>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings>
+        <Position x="378" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="model.name">Spline model</Value>
+          <Value name="select.target">TOTAL_ENERGY_CONSUMPTION_DELTA</Value>
+          <Value name="select.predictors">H_DATE=True,TEMPERATURE=True,TOTAL_ENERGY_CONSUMPTION_DELTA=False,HOUR=True,DAY=True,MONTH=True,QUARTER=True,YEAR=True,DAYOFYEAR=True,WEEKOFYEAR=True,WEEKDAY=True,WEEK_INDEX=True,TTIME=True</Value>
+          <Value name="marginal.plots">True</Value>
+          <Value name="main.effect.plots">False</Value>
+          <Value name="interaction.effect.plots">False</Value>
+          <Value name="both.main.interaction.plots">True</Value>
+          <Value name="type.glm">False</Value>
+          <Value name="type.continuous">True</Value>
+          <Value name="continuous.none">False</Value>
+          <Value name="continuous.gaussian">True</Value>
+          <Value name="type.gamma">False</Value>
+          <Value name="gamma.log">True</Value>
+          <Value name="gamma.inverse">False</Value>
+          <Value name="gamma.identity">False</Value>
+          <Value name="type.count">False</Value>
+          <Value name="poisson.log">True</Value>
+          <Value name="poisson.identity">False</Value>
+          <Value name="type.binomial">False</Value>
+          <Value name="binomial.logit">True</Value>
+          <Value name="binomial.probit">False</Value>
+          <Value name="binomial.cloglog">False</Value>
+          <Value name="type.multinomial">False</Value>
+          <Value name="scale.target">True</Value>
+          <Value name="max.knots">Auto</Value>
+          <Value name="interaction.depth">1</Value>
+          <Value name="penalty">default</Value>
+          <Value name="thresh">0.0010000</Value>
+          <Value name="minspan">0.000</Value>
+          <Value name="newvar.penalty">0.0000</Value>
+          <Value name="fast.k">20</Value>
+          <Value name="fast.beta">1.00</Value>
+          <Value name="cross.validation">False</Value>
+          <Value name="ncross">1</Value>
+          <Value name="nfolds">1</Value>
+          <Value name="stratify">False</Value>
+          <Value name="random.seed">1</Value>
+          <Value name="pmethod">backward</Value>
+          <Value name="nprune">0</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="com.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Spline_Model.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Holdout" />
+      <Destination ToolID="23" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="23" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Estimation" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="25" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Scater Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Report" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="False" max="5048" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="False">C:\Users\Srinivas\AppData\Local\Temp\</TempFiles>
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>time series analysis basic</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
